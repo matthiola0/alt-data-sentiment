@@ -1,0 +1,36 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+.venv/
+.env
+
+# Data & artifacts — never commit
+data/
+*.parquet
+*.csv
+*.pkl
+*.joblib
+models/
+reports/predictions/
+reports/tables/
+
+# HuggingFace / Torch cache if pointed inside repo
+.cache/
+huggingface_cache/
+
+# Figures are kept in git so the README renders on GitHub
+!reports/figures/
+!reports/figures/*.png
+!reports/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+
+# Kaggle CLI push/output scratch dirs
+scripts/kaggle/push/
+scripts/kaggle/output_tmp/
+
+# Notebook builder scripts (kept locally, not tracked)
+scripts/build_[0-9][0-9]_*.py
